@@ -4,144 +4,123 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+    <meta name="description" content="Dasari Vamsi | Java Full Stack Developer Portfolio">
+    <meta name="keywords" content="Java, Spring, Full Stack Developer, Portfolio, Resume, Dasari Vamsi">
+    <meta name="author" content="Dasari Vamsi">
+    <title>Dasari Vamsi | Full Stack Java Developer</title>
 
     <!-- box icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <!-- header design -->
-     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+    <header class="header">
+      <a href="#" class="logo">Dasari Vamsi</a>
       <i class='bx bx-menu' id="menu-icon"></i>
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-     </header>
+    </header>
 
-    <!-- home section design -->
-     <section class="home" id="home"> 
+    <!-- home section -->
+    <section class="home" id="home"> 
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Dasari Vamsi</h1>
-        <h3>And I'm a <span class = "multiple-text"></span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt quaerat enim. Molestiae, soluta adipisci! Vel quia autem sunt officiis rerum accusamus harum, consectetur, quae eveniet quas, tenetur nisi? Commodi.</p>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>I am a Software Developer with over two years of experience as a full-stack Java developer, currently working on a BFSI-based insurance application where I developed the agency module using Java and Spring to manage consumer insurance data, while also providing individual application support by identifying and resolving bugs efficiently.</p>
         <div class="social-media">
-          <a href="#"><i class = 'bx bxl-facebook'></i></a>
-          <a href="#"><i class = 'bx bxl-twitter'></i></a>
-          <a href="#"><i class = 'bx bxl-instagram-alt'></i></a>
-          <a href="#"><i class = 'bx bxl-linkedin'></i></a>
+          <a href="https://github.com/darkbloodprince" target="_blank"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/dasarivamsi/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          <a href="mailto:dasarivamsi23@gmail.com"><i class='bx bxl-gmail'></i></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="documents/Resume.pdf" class="btn" download="Dasari_Vamsi_Resume.pdf">Download CV</a>
       </div>
       <div class="home-img">
-        <img src="images/home.png" alt="">
+        <img src="images/home.png" alt="Dasari Vamsi">
       </div>
-     </section>
+    </section>
 
-    <!-- about section design -->
-     <section class="about" id="about">
+    <!-- about section -->
+    <section class="about" id="about">
       <div class="about-img">
-        <img src="images/about.png" alt="">
+        <img src="images/about.png" alt="About Me">
       </div>
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Java Developer!</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nisi dolore nihil commodi quam distinctio velit, aliquid numquam itaque molestias deserunt a inventore consequuntur enim at est facere ipsa. Et repellendus doloribus asperiores iste unde molestiae nemo vero modi, maxime enim tempore repellat excepturi ab incidunt!</p>
-        <a href="#" class="btn">Read More</a>
+        <h3>Java Full Stack Developer</h3>
+        <p>I am a Software developer with expertise in a range of technologies including 
+Java, Spring, JavaScript and PL/SQL.<br><br>
+Currently, I am working on a BFSI-based client, where I am involved in the 
+development of an insurance-based application that handles financial services and end-to-
+end processing from policy to claims.<br><br>
+With over two years of experience as a full stack Java developer, One of my key 
+contributions to this project has been the development of the agency module using Java and
+Spring framework, which has been instrumental in handling various operations related to
+insurance data for consumers who require services. In addition, I have provided application
+support as an individual, ensuring that any bugs are quickly accessed and redeveloped as
+required.</p>
+        <a href="#experience" class="btn">Read More</a>
       </div>
-     </section>
+    </section>
 
-    <!-- services section design -->
-     <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
-      <div class="services-container">
-        <div class="services-box">
-          <i class = 'bx bx-code-alt'></i>
-          <h3>Web Development</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae asperiores minus, iure delectus velit dolorum perspiciatis earum non fugiat. Veritatis.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class = 'bx bxs-paint'></i>
-          <h3>Graphic Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae asperiores minus, iure delectus velit dolorum perspiciatis earum non fugiat. Veritatis.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class = 'bx bx-bar-chart-alt'></i>
-          <h3>Digital Marketing</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae asperiores minus, iure delectus velit dolorum perspiciatis earum non fugiat. Veritatis.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
+    <!-- experience section (timeline style) -->
+<section class="experience" id="experience">
+  <h2 class="heading">Work <span>Experience</span></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Sep 2023 – Present</div>
+      <div class="timeline-content">
+        <h3>System Engineer</h3>
+        <p class="company">Tata Consultancy Services, Kolkata, West Bengal, India</p>
+        <ul>
+          <li>Developed and maintained the Agency Module of an insurance application for a US-based BFSI client using Java, Spring, and PL/SQL.</li>
+          <li>Managed end-to-end functionality including policy issuance, claims processing, financial transactions, and advisor management.</li>
+          <li>Individually handled application support and bug fixing, ensuring high reliability and client satisfaction.</li>
+          <li>Collaborated with cross-functional teams to deliver feature enhancements and system optimizations.</li>
+        </ul>
+        <p class="skills"><strong>Skills:</strong> Java, Spring Framework, PL/SQL, GitHub, Application Support</p>
       </div>
-     </section>
+    </div>
+  </div>
+</section>
 
-    <!-- portfolio section design -->
-     <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
+    <!-- projects section -->
+    <section class="portfolio" id="projects">
+      <h2 class="heading">My <span>Projects</span></h2>
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="images/portfolio1.jpg" alt="">
+          <img src="images/portfolio1.png" alt="Resume Builder">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
+            <h4>Online Resume Builder</h4>
+            <p>A tool to help students generate professional resumes using HTML, CSS, JS, PHP, and MySQL.</p>
+            <div class="social-media">
+          <a href="https://github.com/darkbloodprince/OnlineResumeBuilder" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
           </div>
         </div>
         <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="">
+          <img src="images/portfolio2.png" alt="Review System">
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
-          </div>
+            <h4>Automated Student Review System</h4>
+            <p>Emotion-based review generator using Python, Django, and CNN for student attentiveness analysis.</p>
+            <div class="social-media">
+          <a href="https://github.com/darkbloodprince/Automated-Student-Review-System" target="_blank"><i class='bx bxl-github'></i></a>
         </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio3.jpg" alt="">
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio4.jpg" alt="">
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio5.jpg" alt="">
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
-          </div>
-        </div>
-        <div class="portfolio-box">
-          <img src="images/portfolio6.jpg" alt="">
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat.</p>
-            <a href="#"><i class = 'bx bx-link-external'></i></a>
           </div>
         </div>
       </div>
-     </section>
+    </section>
 
-    <!-- contact section design -->
-     <section class="contact" id="contact">
+    <!-- contact section -->
+    <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
       <form action="#">
         <div class="input-box">
@@ -152,28 +131,25 @@
           <input type="number" placeholder="Mobile Number">
           <input type="text" placeholder="Email Subject">
         </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
       </form>
-     </section>
+    </section>
 
-    <!-- footer design -->
-     <footer class="footer">
+    <!-- footer -->
+    <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2025 by Dasari Vamsi | All Rights Reserved.</p>
+        <p>&copy; 2025 Dasari Vamsi | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
-        <a href="#home"><i class = 'bx bx-up-arrow-alt'></i></a>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
       </div>
-     </footer>
-
+    </footer>
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <!-- typed js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
     <!-- custom js -->
     <script src="js/script.js"></script>
   </body>

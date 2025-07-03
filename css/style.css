@@ -78,7 +78,7 @@ section{
         transform: translateY(0);
     }
     50%{
-        transform: translateY(-0.5rem);
+        transform: translateY(-0.2rem);
     }
     100%{
         transform: translateY(0);
@@ -161,6 +161,158 @@ span{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+/* Experience Section - Improved */
+.experience {
+  padding: 8rem 9% 4rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.experience .heading {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  /*color: var(--main-color);*/
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-box {
+  background: #1e293b;
+  padding: 3rem 2.5rem;
+  border-left: 6px solid var(--main-color);
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 2rem rgba(255, 0, 0, 0.4);
+}
+
+.experience-box h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.experience-box .company {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #facc15;
+  margin-bottom: 0.4rem;
+}
+
+.experience-box .duration {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.experience-box ul {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.experience-box ul li {
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.experience-box .skills {
+  font-size: 1.6rem;
+  color: #a5f3fc;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Timeline Style for Experience */
+.timeline {
+  position: relative;
+  margin: 4rem auto;
+  padding-left: 3rem;
+  border-left: 4px solid var(--main-color);
+  max-width: 900px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.1rem;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 4px solid #1e293b;
+   top: 0.5rem; /* Slightly down to align better */
+}
+
+.timeline-date {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  margin-left: 2.5rem;  /* Push it away from the dot */
+  display: inline-block;
+}
+
+.timeline-content {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+}
+
+.timeline-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.timeline-content .company {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-content ul li {
+  margin-bottom: 1rem;
+}
+
+.timeline-content .skills {
+  font-size: 1.45rem;
+  color: #38bdf8;
+}
+
 .services h2{
     margin-bottom: 5rem;
 }
@@ -203,7 +355,7 @@ span{
 }
 .portfolio-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
 }
@@ -294,6 +446,17 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
+
+input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
 .footer{
     display: flex;
     justify-content: space-between;
