@@ -1,53 +1,69 @@
 <!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
 <html lang="en">
   <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8" />
+    <!-- Compatibility with Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Responsive design for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Dasari Vamsi | Java Full Stack Developer Portfolio">
     <meta name="keywords" content="Java, Spring, Full Stack Developer, Portfolio, Resume, Dasari Vamsi">
     <meta name="author" content="Dasari Vamsi">
+
+    <!-- Title shown in browser tab -->
     <title>Dasari Vamsi | Full Stack Java Developer</title>
 
-    <!-- box icons -->
+    <!-- Boxicons CDN for using icon fonts -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- custom css -->
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- header design -->
+    <!-- ========== Header Section ========== -->
     <header class="header">
       <a href="#" class="logo">Dasari Vamsi</a>
-      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class='bx bx-menu' id="menu-icon"></i> <!-- Hamburger icon for mobile nav -->
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <!--<a href="#contact">Contact</a>-->
+        <!-- <a href="#contact">Contact</a> (commented out) -->
       </nav>
     </header>
 
-    <!-- home section -->
+    <!-- ========== Home Section ========== -->
     <section class="home" id="home"> 
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Dasari Vamsi</h1>
-        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <h3>And I'm a <span class="multiple-text"></span></h3> <!-- Typing animation placeholder -->
         <p>I am a Software Developer with over two years of experience as a full-stack Java developer, currently working on a BFSI-based insurance application where I developed the agency module using Java and Spring to manage consumer insurance data, while also providing individual application support by identifying and resolving bugs efficiently.</p>
+        
+        <!-- Social Media Icons -->
         <div class="social-media">
           <a href="https://github.com/darkbloodprince" target="_blank"><i class='bx bxl-github'></i></a>
           <a href="https://www.linkedin.com/in/dasarivamsi/" target="_blank"><i class='bx bxl-linkedin'></i></a>
           <a href="mailto:dasarivamsi23@gmail.com"><i class='bx bxl-gmail'></i></a>
         </div>
+
+        <!-- Resume download button -->
         <a href="documents/Resume.pdf" class="btn" download="Dasari_Vamsi_Resume.pdf">Resume</a>
       </div>
+
+      <!-- Home image on the right -->
       <div class="home-img">
         <img src="images/home.png" alt="Dasari Vamsi">
       </div>
     </section>
 
-    <!-- about section -->
+    <!-- ========== About Section ========== -->
     <section class="about" id="about">
       <div class="about-img">
         <img src="images/about.png" alt="About Me">
@@ -70,57 +86,64 @@ required.</p>
       </div>
     </section>
 
-    <!-- experience section (timeline style) -->
-<section class="experience" id="experience">
-  <h2 class="heading">Work <span>Experience</span></h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">Sep 2023 – Present</div>
-      <div class="timeline-content">
-        <h3>System Engineer</h3>
-        <p class="company">Tata Consultancy Services, Kolkata, West Bengal, India</p>
-        <ul>
-          <li>Developed and maintained the Agency Module of an insurance application for a BFSI-based client using Java, Spring, and PL/SQL.</li>
+    <!-- ========== Experience Section (Timeline Style) ========== -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Work <span>Experience</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div> <!-- Visual dot on the timeline -->
+          <div class="timeline-date">Sep 2023 – Present</div>
+          <div class="timeline-content">
+            <h3>System Engineer</h3>
+            <p class="company">Tata Consultancy Services, Kolkata, West Bengal, India</p>
+            <ul>
+              <li>Developed and maintained the Agency Module of an insurance application for a BFSI-based client using Java, Spring, and PL/SQL.</li>
           <li>Managed end-to-end functionality including policy issuance, claims processing, financial transactions, and advisor management.</li>
           <li>Individually handled application support and bug fixing, ensuring high reliability and client satisfaction.</li>
           <li>Collaborated with cross-functional teams to deliver feature enhancements and system optimizations.</li>
-        </ul>
-        <p class="skills"><strong>Skills:</strong> Java, Spring Framework, PL/SQL, GitHub, Application Support</p>
+              <!-- List of responsibilities -->
+            </ul>
+            <p class="skills"><strong>Skills:</strong> Java, Spring Framework, PL/SQL, GitHub, Application Support</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    <!-- projects section -->
+    <!-- ========== Projects Section ========== -->
     <section class="portfolio" id="projects">
       <h2 class="heading">My <span>Projects</span></h2>
       <div class="portfolio-container">
+        
+        <!-- Project 1 -->
         <div class="portfolio-box">
           <img src="images/portfolio1.png" alt="Resume Builder">
           <div class="portfolio-layer">
             <h4>Online Resume Builder</h4>
             <p>A tool to help students generate professional resumes using HTML, CSS, JS, PHP, and MySQL.</p>
             <div class="social-media">
-          <a href="https://github.com/darkbloodprince/OnlineResumeBuilder" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
+              <a href="https://github.com/darkbloodprince/OnlineResumeBuilder" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
           </div>
         </div>
+
+        <!-- Project 2 -->
         <div class="portfolio-box">
           <img src="images/portfolio2.png" alt="Review System">
           <div class="portfolio-layer">
             <h4>Automated Student Review System</h4>
             <p>Emotion-based review generator using Python, Django, and CNN for student attentiveness analysis.</p>
             <div class="social-media">
-          <a href="https://github.com/darkbloodprince/Automated-Student-Review-System" target="_blank"><i class='bx bxl-github'></i></a>
-        </div>
+              <a href="https://github.com/darkbloodprince/Automated-Student-Review-System" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- contact section -->
-    <!--<section class="contact" id="contact">
+    <!-- ========== Contact Section (commented out) ========== -->
+    <!-- 
+    <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
       <form action="#">
         <div class="input-box">
@@ -134,23 +157,25 @@ required.</p>
         <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
       </form>
-    </section>-->
+    </section>
+    -->
 
-    <!-- footer -->
+    <!-- ========== Footer ========== -->
     <footer class="footer">
       <div class="footer-text">
         <p>&copy; 2025 Dasari Vamsi | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a> <!-- Back to top -->
       </div>
     </footer>
 
-    <!-- scroll reveal -->
+    <!-- ========== JS Scripts ========== -->
+    <!-- For scroll animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- typed js -->
+    <!-- For typing effect in header -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- custom js -->
+    <!-- Custom JS file -->
     <script src="js/script.js"></script>
   </body>
 </html>

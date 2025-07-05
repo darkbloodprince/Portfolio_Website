@@ -1,3 +1,4 @@
+/*Font Import and Reset*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -10,24 +11,28 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+/*Color and root settings*/
 :root{
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: red;/*#0ef;*/
 }
+/*Html and body setup*/
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /* 1rem = 10px for easier scaling */
     overflow-x: hidden;
 }
 body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+/*Global Section Styling*/
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+/*Header and Navbar*/
 .header{
     position: fixed;
     top:0;
@@ -38,10 +43,10 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 100; /* Ensures it stays on top */
 }
 .header.sticky{
-    border-bottom: .1rem solid rgba(0,0,0,.2);
+    border-bottom: .1rem solid rgba(0,0,0,.2); /* When scrolled */
 }
 .logo{
     font-size: 2.5rem;
@@ -64,6 +69,7 @@ section{
     color: var(--text-color);
     display: none;
 }
+/*Home Section*/
 .home{
     display: flex;
     justify-content: center;
@@ -136,6 +142,7 @@ span{
 .btn:hover{
     box-shadow: none;
 }
+/*About Section*/
 .about{
     display: flex;
     justify-content: center;
@@ -312,7 +319,7 @@ span{
   font-size: 1.45rem;
   color: #38bdf8;
 }
-
+/*Services Section*/
 .services h2{
     margin-bottom: 5rem;
 }
@@ -347,6 +354,7 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+/*Portfolio Section*/
 .portfolio{
     background: var(--second-bg-color);
 }
@@ -412,6 +420,7 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+/*Contact Section*/
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -456,7 +465,7 @@ input[type=number]::-webkit-outer-spin-button,
   input[type=number] {
     -moz-appearance: textfield;
   }
-
+/*Footer Section*/
 .footer{
     display: flex;
     justify-content: space-between;
@@ -485,6 +494,7 @@ input[type=number]::-webkit-outer-spin-button,
     color: var(--second-bg-color);
 }
 /*BREAKPOINTS*/
+/*Responsive Design - Media Queries*/
 @media (max-width: 1200px){
     html{
         font-size: 55%;
@@ -524,7 +534,7 @@ input[type=number]::-webkit-outer-spin-button,
         border-top: .1rem solid rgba(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         display: none;
-    }
+    } /* Mobile dropdown */
     .navbar.active{
         display: block;
     }
