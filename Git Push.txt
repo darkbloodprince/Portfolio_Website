@@ -18,6 +18,10 @@ git commit -m "First"
 git remote add origin https://github.com/darkbloodprince/Portfolio_Website.git
 git push origin master
 
+Git Clone:
+cd "C:\Users\darkb\OneDrive\Desktop\Portfolio_Website"
+git clone "https://github.com/darkbloodprince/Portfolio_Website.git"
+
 
 Another git process seems to be running in this repository, e.g.
 an editor opened by 'git commit'. Please make sure all processes
