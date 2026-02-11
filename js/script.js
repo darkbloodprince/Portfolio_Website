@@ -1,58 +1,105 @@
-/*==================== toggle icon navbar ====================*/
-let menuIcon = document.querySelector('#menu-icon'); // Selects the hamburger menu icon
-let navbar = document.querySelector('.navbar'); // Selects the navigation bar
+/* ================= MOBILE MENU TOGGLE ================= */
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x'); // Toggles the close icon (usually from boxicons)
-    navbar.classList.toggle('active'); // Shows or hides the navbar on click
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 };
 
-/*==================== scroll sections active link ====================*/
-let sections = document.querySelectorAll('section'); // Selects all sections in the page
-let navLinks = document.querySelectorAll('header nav a'); // Selects all nav links
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY; // Current vertical scroll position
-        let offset = sec.offsetTop - 150; // Offset from the top with buffer
-        let height = sec.offsetHeight; // Height of the current section
-        let id = sec.getAttribute('id'); // Section ID (used for linking)
-        // Check if current scroll position is within this section
-        if(top >= offset && top < offset + height){
-            navLinks.forEach(links => {
-                links.classList.remove('active'); // Remove active class from all links
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active'); // Add active class to the current section link
-            });
-        };
+/* ================= CLOSE MENU ON NAV CLICK ================= */
+
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
     });
-    /*==================== sticky navbar ====================*/
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky',window.scrollY > 100); // Adds 'sticky' class if scroll > 100px
-    /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
-    // Close navbar and icon when any nav link is clicked
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-};
-
-
-/*==================== scroll reveal ====================*/
-ScrollReveal({
-    //reset:true, // Uncomment if you want the animation to repeat every time
-    distance: '80px', // Distance elements move during reveal
-    duration: 2000,  // Duration of animation (in ms)
-    delay: 200 // Delay before animation starts
 });
-// Reveals elements from different directions based on selector
-ScrollReveal().reveal('.home-content, .heading',{origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container,.portfolio-box,.contact form, .timeline-content',{origin: 'bottom'});
-ScrollReveal().reveal('.home-content h1, .about-img',{origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content',{origin: 'right'});
 
-/*==================== typed js ====================*/
-const typed = new Typed('.multiple-text',{
-    strings: ['Java Developer','System Engineer'], // Words to type
-    typeSpeed: 100, // Speed of typing (ms)
-    backSpeed: 100, // Speed of backspacing (ms)
-    backDelay: 1000, // Delay before starting to erase (ms)
-    loop: true // Loops the typing animation forever
-})
+
+/* ================= ACTIVE NAV LINK ON SCROLL ================= */
+
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.addEventListener('scroll', () => {
+
+    let top = window.scrollY;
+
+    sections.forEach(sec => {
+
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            document
+                .querySelector('header nav a[href*=' + id + ']')
+                ?.classList.add('active');
+        }
+    });
+
+    /* ================= STICKY HEADER ================= */
+
+    let header = document.querySelector('.header');
+
+    if(window.scrollY > 80){
+        header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.35)";
+    }else{
+        header.style.boxShadow = "none";
+    }
+
+});
+
+
+/* ================= SCROLL REVEAL ================= */
+
+ScrollReveal({
+    distance: '70px',
+    duration: 1800,
+    delay: 150,
+    easing: 'ease-in-out',
+    reset: false
+});
+
+ScrollReveal().reveal('.home-content, .heading', {
+    origin: 'top'
+});
+
+ScrollReveal().reveal('.home-img, .services-box, .portfolio-box, .timeline-content, .contact form', {
+    origin: 'bottom'
+});
+
+ScrollReveal().reveal('.about-img', {
+    origin: 'left'
+});
+
+ScrollReveal().reveal('.about-content', {
+    origin: 'right'
+});
+
+
+/* ================= TYPING ANIMATION ================= */
+
+const typed = new Typed('.multiple-text', {
+
+    strings: [
+        'Java Backend Engineer',
+        'Microservices Developer',
+        'Spring Boot Specialist',
+        'Cloud-Ready Engineer'
+    ],
+
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1200,
+    smartBackspace: true,
+    loop: true
+});
